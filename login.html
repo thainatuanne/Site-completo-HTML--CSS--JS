@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/increase-decrease.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/fale-conosco.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <title>PROJETO FINAL DO CURSO</title>
+</head>
+<body>
+    <div class="flex-container main-content">
+        <div class="navbar">
+            <div id="navbar">
+                <a href="index.html" id="logo"><p>Elegance Tricot</p></a>
+                <div id="navbar-right">
+                  <a href="index.html">Home</a>
+                  <a href="produtos.html">Produtos</a>
+                  <a href="fale-conosco.html">Fale Conosco</a>
+                </div>
+                <div id="icons">
+                    <a href="login.html" class="active"><i class="fas fa-user"></i></a>
+                    <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                    <div class="font-size-buttons">
+                      <button id="decrease-font">A-</button>
+                      <button id="increase-font">A+</button>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="content">
+            <form id="login-form">
+                <div class="redes-sociais">
+                  <h2>Faça seu login pelas redes sociais ou manualmente</h2>
+                </div>
+                <div class="btn-container">
+                  <a href="https://www.facebook.com/?locale=pt_BR" class="fb btn">
+                    <i id="btn-icon" class="fa-brands fa-facebook"></i></i>Facebook
+                  </a>
+                  <a href="https://x.com/?lang=pt-br" class="x btn">
+                    <i id="btn-icon" class="fa-brands fa-square-x-twitter"></i> X Twitter
+                  </a>
+                  <a href="https://www.google.com/intl/pt-BR/gmail/about/" class="google btn">
+                    <i id="btn-icon" class="fa-solid fa-envelope"></i></i></i> Gmail
+                  </a>
+                </div>
+                <div class="vl">
+                  <span class="vl-innertext">ou</span>
+                </div>
+                <div class="form-container">
+                  <div class="hide-md-lg">
+                    <p>Se preferir, pode realizar de forma manual:</p>
+                  </div>
+                  <input type="text" id="username" name="username" placeholder="login">
+                  <input type="password"  id="password" name="password" placeholder="senha">
+                  <input type="submit" value="Entrar">
+                </div>
+            </form> 
+              <div id="buttonLogin" class="bottom-container">
+                  <a href="cadastro.html" class="btn">Cadastrar</a>
+                  <a href="#" class="btn">Recuperar a senha?</a>
+              </div>
+              </div>
+              <script src="./js/login.js"></script>
+              <script src="./js/increase-decrease.js"></script>
+            </div>
+        <div class="footer-a">
+            <div class="logo">
+                <a href="index.html" id="logo"><p>Elegance Tricot</p></a>
+            </div>
+            <div class="atendimento">
+                <a href="fale-conosco.html">
+                    <h2>Central de Atendimento</h2>
+                </a>
+                <p>(51) 3563-2188</p>
+                <i class="bi bi-envelope"> elegancetricot@gmail.com</i>
+                <p>Segunda a Sexta - 8h às 18h</p>
+                <p>Sábado, Domingo e Feriados - 8h às 19h</p>
+            </div>
+        </div>
+        <div class="footer-b">
+            <div class="pagamento">
+                <i class="fa fa-cc-visa"></i>   
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-barcode"></i>
+                <i class="fa-brands fa-pix"></i>
+            </div>
+            <div class="direitos-a">
+                <p>Todos os direitos reservados - 2024</p>
+            </div>
+            <div class="direitos-b">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook icon-hover"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram icon-hover"></i>
+                </a>
+                <a href="https://wa.me/5135632188" aria-label="WhatsApp" class="whatsapp-fixed">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/increase-decrease.css">
+    <link rel="stylesheet" href="./css/fale-conosco.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/fale-conosco.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <title>PROJETO FINAL DO CURSO</title>
+</head>
+<body>
+    <div class="flex-container main-content">
+        <div class="navbar">
+            <div id="navbar">
+                <a href="index.html" id="logo"><p>Elegance Tricot</p></a>
+                <div id="navbar-right">
+                  <a href="index.html">Home</a>
+                  <a href="produtos.html">Produtos</a>
+                  <a href="fale-conosco.html"   class="active">Fale Conosco</a>
+                </div>
+                <div id="icons">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                    <div class="font-size-buttons">
+                      <button id="decrease-font">A-</button>
+                      <button id="increase-font">A+</button>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="content-contact">
+            <div class="contact">
+                <h2>Entre em contato conosco através do formulário ao lado.</h2>
+                <img src="./img/form.png" alt="">
+            </div>
+            <div class="formulario">
+                <form id="form-contact" onsubmit="return validateForm()">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="name">Endereço:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div>
+                        <label for="name">CPF:</label>
+                        <input type="text" id="cpf" name="cpf">
+                        <span id="cpfError" class="error"></span>
+                    </div> 
+                    <div>
+                        <label for="">Mensagem:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <input id="submitt" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <script>
+                var submitButton = document.getElementById('submitt');
+    
+                submitButton.addEventListener('mouseenter', function() {
+                    submitButton.classList.add('hover');
+                });
+        
+                submitButton.addEventListener('mouseleave', function() {
+                    submitButton.classList.remove('hover');
+                });
+            </script>
+            <script src="./js/increase-decrease.js"></script>
+        </div>
+        <div class="footer-a">
+            <div class="logo">
+                <a href="index.html" id="logo"><p>Elegance Tricot</p></a>
+            </div>
+            <div class="atendimento">
+                <a href="fale-conosco.html">
+                    <h2>Central de Atendimento</h2>
+                </a>
+                <p>(51) 3563-2188</p>
+                <i class="bi bi-envelope"> elegancetricot@gmail.com</i>
+                <p>Segunda a Sexta - 8h às 18h</p>
+                <p>Sábado, Domingo e Feriados - 8h às 19h</p>
+            </div>
+        </div>
+        <div class="footer-b">
+            <div class="pagamento">
+                <i class="fa fa-cc-visa"></i>   
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-barcode"></i>
+                <i class="fa-brands fa-pix"></i>
+            </div>
+            <div class="direitos-a">
+                <p>Todos os direitos reservados - 2024</p>
+            </div>
+            <div class="direitos-b">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook icon-hover"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram icon-hover"></i>
+                </a>
+                <a href="https://wa.me/5135632188" aria-label="WhatsApp" class="whatsapp-fixed">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

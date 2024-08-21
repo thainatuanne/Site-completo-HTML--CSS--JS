@@ -1,0 +1,175 @@
+:root {
+    --grey: #F2F2F2;
+    --tumbleweed: #D9998B;
+    --capuutMortum: #593932;
+    --almond: #F2D5C4;
+    --caravelBrown: #8C6E54;
+    --green: #25D366;
+    --greendark: #128C7E;
+    --white: white;
+    --xTwitter: #1C2833;
+    --google: #DD4B39;
+    --facebook: #3B5998;
+}
+
+@font-face {
+    font-family: minha-fonte;
+    src: url('../fonte/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: minha-fonte2;
+    src: url('../fonte/JuliusSansOne-Regular.ttf');
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 100%;
+    font-family: minha-fonte2;
+    color: var(--capuutMortum);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+  
+.vl {
+    text-align: center;
+    margin: 10px;
+}
+  
+.vl-innertext {
+    font-family: minha-fonte2;
+    background-color: var(--caravelBrown);
+    color: var(--almond);
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.hide-md-lg {
+    color: var(--almond);
+    font-family: minha-fonte2;
+    font-size: 15px;
+}
+  
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+    flex: 100%;
+}
+  
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: minha-fonte2;
+}
+  
+#btn-icon {
+    margin-right: 10px;
+}
+
+.btn-container a {
+    text-decoration: none;
+  }
+  
+.fb {
+    background-color: var(--facebook);
+    color: var(--white);
+}
+  
+.x {
+    background-color: var(--xTwitter);
+    color: var(--white);
+}
+  
+.google {
+    background-color: var(--google);
+    color: var(--white);
+}
+  
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=submit] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: minha-fonte2;
+    color: var(--capuutMortum);
+    text-align: center;
+    outline: none;
+}
+  
+.form-container input[type=submit] {
+    background-color: var(--capuutMortum);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+  
+.form-container input[type=submit]:hover {
+    background-color: var(--almond);
+}
+  
+.bottom-container .btn {
+    display: inline-block;
+    justify-content: space-between;
+    font-family: minha-fonte2;
+    width: 45%;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--capuutMortum);
+    transition: background-color 0.3s ease;
+}
+  
+.bottom-container .btn:hover {
+    color: var(--almond);
+}
+
+@media screen and (max-width: 700px) {
+    .redes-sociais {
+        flex: 100%;
+    }
+    .hide-md-lg {
+        font-size: 15px;
+    }
+    .btn {
+        width: 100%;
+        font-size: 13px;
+        padding: 10px;
+    }
+}

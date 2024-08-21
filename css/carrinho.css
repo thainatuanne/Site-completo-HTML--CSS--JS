@@ -1,0 +1,177 @@
+:root {
+    --grey: #F2F2F2;
+    --tumbleweed: #D9998B;
+    --capuutMortum: #593932;
+    --almond: #F2D5C4;
+    --caravelBrown: #8C6E54;
+    --green: #25D366;
+    --greendark: #128C7E;
+    --white: white;
+    --red: red;
+}
+
+@font-face {
+    font-family: minha-fonte;
+    src: url('../fonte/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: minha-fonte2;
+    src: url('../fonte/JuliusSansOne-Regular.ttf');
+}
+
+.compras {
+    display: flex;
+    flex: 100%;
+    height: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.compras h1 {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-family: minha-fonte2;
+    font-size: 20px;
+    color: var(--capuutMortum);
+}
+
+#cart-items {
+    flex: 100%;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--almond);
+    border-radius: 50px;
+    font-family: minha-fonte2;
+    font-size: 15px;
+    color: var(--capuutMortum);
+}
+
+#cart-items li {
+    padding: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.delete-button {
+    flex: 100%;
+    background-color: var(--tumbleweed);
+    color: var(--almond);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: minha-fonte2;
+    font-size: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:hover {
+    background-color: var(--capuutMortum);
+}
+
+.pagament {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 100%;
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+}
+
+.pagament h2 {
+    color: var(--capuutMortum);
+    font-family: minha-fonte2;
+    font-size: 18px;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--almond); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#payment-form .form-group {
+    margin-bottom: 15px;
+}
+
+#payment-form label {
+    font-family: minha-fonte2;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--capuutMortum);
+    margin-bottom: 5px;
+}
+
+#payment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: var(--grey);
+    font-family: minha-fonte2;
+    color: var(--capuutMortum);
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease; /* Transição para a borda */
+}
+
+#pagar-btn {
+    background-color: var(--caravelBrown);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--almond);
+    font-family: minha-fonte2;
+
+}
+
+#pagar-btn:hover {
+    background-color: var(--capuutMortum);
+}
+
+#mensagem {
+    margin: 5px;
+    color: var(--almond);
+    font-family: minha-fonte2;
+}
+
+@media screen and (max-width: 700px) {
+    .compras {
+        flex: 100%;
+    }
+    .compras h1 {
+        font-size: 14px;
+    }
+    #cart-items {
+        flex: 100%;
+        font-size: 10px;
+    }
+    .delete-button {
+        flex: 100%;
+        font-size: 8px;
+    }
+    .pagament {
+        flex: 100%;
+    }
+    .pagament h2 {
+        font-size: 15px;
+    }
+}

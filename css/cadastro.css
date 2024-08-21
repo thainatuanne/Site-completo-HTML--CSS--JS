@@ -1,0 +1,121 @@
+:root {
+    --grey: #F2F2F2;
+    --tumbleweed: #D9998B;
+    --capuutMortum: #593932;
+    --almond: #F2D5C4;
+    --caravelBrown: #8C6E54;
+    --green: #25D366;
+    --greendark: #128C7E;
+    --white: white;
+    --red: red;
+}
+
+@font-face {
+    font-family: minha-fonte;
+    src: url('../fonte/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: minha-fonte2;
+    src: url('../fonte/JuliusSansOne-Regular.ttf');
+}
+.error {
+    color: var(--almond);
+    font-family: minha-fonte2;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    font-family: minha-fonte2;
+    color: var(--capuutMortum);
+}
+
+.cadastro p {
+    color: var(--capuutMortum);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#cadastro-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+#cadastro-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#cadastro-form label {
+    font-family: minha-fonte2;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--capuutMortum);
+    margin-bottom: 5px;
+}
+
+#cadastro-form input, #cadastro-form textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: var(--grey);
+    font-family: minha-fonte2;
+    font-size: 15px;
+    color: var(--capuutMortum);
+    text-align: center;
+    outline: none;
+}
+
+#cadastro-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#cadastro-form input[type="submit"] {
+    background-color: var(--capuutMortum);
+    color: var(--white);
+    border: none;
+    width: 30%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+#cadastro-form input[type="submit"]:hover {
+    background-color: var(--almond);
+}
+
+@media screen and (max-width: 700px) {
+    .cadastro {
+        width: 100%;
+    }
+    #cadastro-form input,
+    #cadastro-form textarea {
+        width: 70%;
+    }
+    #cadastro-form input[type="submit"] {
+        width: 60%;
+    }
+}
+
